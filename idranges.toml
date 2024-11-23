@@ -2,25 +2,25 @@
 # Documentation of the TOML format: https://toml.io/en/latest
 
 # Allow only a single vocabulary (default) or multiple vocabularies in the repository.
-single_vocab = true
+single_vocab = false
 
 # ==== Configuration for vocabulary "vocab_example" ====
 
 # The name of the vocabulary is used as section name.
 # It should match the filename-stem of the vocabulary files.
-[vocabs.vocab_example]
+[vocabs.envthes]
 # Length of integer IDs in vocabulary. IDs will be left-padded with zeros to specified length.
 id_length = 7
 # permanent part of IRIs defined in the vocabulary
-permanent_iri_part = "https://example.org/test/"
+permanent_iri_part = "https://vocabs.lter-europe.net/envthes/"
 
 # Section to configure checks (useful in CI pipeline)
-[vocabs.vocab_example.checks]
+[vocabs.envthes.checks]
 # Deleting allowed (relevant in CI-pipeline)
 allow_delete = false
 
-[vocabs.vocab_example.prefix_map]
-ex = "https://example.org/"
+[vocabs.envthes.prefix_map]
+ex = "https://vocabs.lter-europe.net/"
 # Section of IDranges for coordinating the allocation of numeric ID ranges to
 # contributors for each vocabulary. Each idrange contains the same keys:
 #
@@ -30,14 +30,14 @@ ex = "https://example.org/"
 # orcid = "<string> or <url>" - contributor's ORCID, e.g. "0000-0002-1825-0097" or "https://orcid.org/0000-0002-1825-0097"
 # ror_id = "<url>"            - ROR identifier of home organisation, e.g. "https://ror.org/04fa4r544"
 
-[[vocabs.vocab_example.id_range]]
+[[vocabs.envthes.id_range]]
 first_id = 1
 last_id = 10
-gh_name = "sofia-garcia"
-orcid = "0000-0001-2345-6789"
-ror_id = "https://ror.org/04fa4r544"
+gh_name = "oggioniale"
+orcid = "0000-0002-7997-219X"
+ror_id = "https://ror.org/02wxw4x45"
 
-[[vocabs.vocab_example.id_range]]
+[[vocabs.envthes.id_range]]
 first_id = 11
 last_id = 20
 gh_name = "unknown"
