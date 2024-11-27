@@ -59,4 +59,4 @@ permanent_iri_part = "https://vocabs.lter-europe.net/dataLevel/" # may be to be 
 allow_delete = false
 [vocabs.dataLevel.prefix_map]
 et = "https://vocabs.lter-europe.net/" # ???
-[[vocabs.dataLevel.idrange]]
+# [[vocabs.dataLevel.idrange]]
