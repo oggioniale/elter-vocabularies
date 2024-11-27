@@ -33,12 +33,12 @@ et = "https://vocabs.lter-europe.net/" # may be to be changed with new URI of En
 # orcid = "<string> or <url>" - contributor's ORCID, e.g. "0000-0002-1825-0097" or "https://orcid.org/0000-0002-1825-0097"
 # ror_id = "<url>"            - ROR identifier of home organisation, e.g. "https://ror.org/04fa4r544"
 
-# [[vocabs.envthes.id_range]]
-# first_id = 1
-# last_id = 10
-# gh_name = "oggioniale"
-# orcid = "0000-0002-7997-219X"
-# ror_id = "https://ror.org/02wxw4x45"
+[[vocabs.envthes.id_range]]
+first_id = 1
+last_id = 10
+gh_name = "oggioniale"
+orcid = "0000-0002-7997-219X"
+ror_id = "https://ror.org/02wxw4x45"
 
 # [[vocabs.envthes.id_range]]
 # first_id = 11
@@ -59,4 +59,4 @@ permanent_iri_part = "https://vocabs.lter-europe.net/dataLevel/" # may be to be 
 allow_delete = false
 [vocabs.dataLevel.prefix_map]
 et = "https://vocabs.lter-europe.net/" # ???
-# [[vocabs.othervocab.idrange]]
+[[vocabs.dataLevel.idrange]]
