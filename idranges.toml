@@ -4,7 +4,9 @@
 # Allow only a single vocabulary (default) or multiple vocabularies in the repository.
 single_vocab = false
 
-# ==== Configuration for vocabulary "vocab_example" ====
+# ==== Configuration for vocabularies ====
+
+# == EnvThes ==
 
 # The name of the vocabulary is used as section name.
 # It should match the filename-stem of the vocabulary files.
@@ -12,7 +14,7 @@ single_vocab = false
 # Length of integer IDs in vocabulary. IDs will be left-padded with zeros to specified length.
 id_length = 7
 # permanent part of IRIs defined in the vocabulary
-permanent_iri_part = "https://vocabs.lter-europe.net/envthes/"
+permanent_iri_part = "https://vocabs.lter-europe.net/envthes/" # may be to be changed with new URI of EnvThes!
 
 # Section to configure checks (useful in CI pipeline)
 [vocabs.envthes.checks]
@@ -21,6 +23,7 @@ allow_delete = false
 
 [vocabs.envthes.prefix_map]
 et = "https://vocabs.lter-europe.net/" # may be to be changed with new URI of EnvThes!
+
 # Section of IDranges for coordinating the allocation of numeric ID ranges to
 # contributors for each vocabulary. Each idrange contains the same keys:
 #
@@ -30,14 +33,14 @@ et = "https://vocabs.lter-europe.net/" # may be to be changed with new URI of En
 # orcid = "<string> or <url>" - contributor's ORCID, e.g. "0000-0002-1825-0097" or "https://orcid.org/0000-0002-1825-0097"
 # ror_id = "<url>"            - ROR identifier of home organisation, e.g. "https://ror.org/04fa4r544"
 
-[[vocabs.envthes.id_range]]
+# [[vocabs.envthes.id_range]]
 # first_id = 1
 # last_id = 10
 # gh_name = "oggioniale"
 # orcid = "0000-0002-7997-219X"
 # ror_id = "https://ror.org/02wxw4x45"
 
-[[vocabs.envthes.id_range]]
+# [[vocabs.envthes.id_range]]
 # first_id = 11
 # last_id = 20
 # gh_name = "unknown"
@@ -47,7 +50,13 @@ et = "https://vocabs.lter-europe.net/" # may be to be changed with new URI of En
 # Continue with as many [[vocabs.vocab_example.idrange]] sections as needed.
 
 # More vocabularies can be configured by adding sections with appropriate name.
-# [vocabs.othervocab]
-# [vocabs.othervocab.checks]
-# [vocabs.othervocab.prefix_map]
+
+# == eLTER Data Level code list derived from https://elter.atlassian.net/wiki/spaces/EC/pages/918749186/eLTER+Data+Levels ==
+[vocabs.dataLevel]
+id_length = 2
+permanent_iri_part = "https://vocabs.lter-europe.net/dataLevel/" # may be to be changed with new URI of eLTER vocabularies!
+[vocabs.dataLevel.checks]
+allow_delete = false
+[vocabs.dataLevel.prefix_map]
+et = "https://vocabs.lter-europe.net/" # ???
 # [[vocabs.othervocab.idrange]]
