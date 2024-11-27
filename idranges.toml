@@ -20,7 +20,7 @@ permanent_iri_part = "https://vocabs.lter-europe.net/envthes/"
 allow_delete = false
 
 [vocabs.envthes.prefix_map]
-ex = "https://vocabs.lter-europe.net/"
+et = "https://vocabs.lter-europe.net/" # may be to be changed with new URI of EnvThes!
 # Section of IDranges for coordinating the allocation of numeric ID ranges to
 # contributors for each vocabulary. Each idrange contains the same keys:
 #
@@ -31,18 +31,18 @@ ex = "https://vocabs.lter-europe.net/"
 # ror_id = "<url>"            - ROR identifier of home organisation, e.g. "https://ror.org/04fa4r544"
 
 [[vocabs.envthes.id_range]]
-first_id = 1
-last_id = 10
-gh_name = "oggioniale"
-orcid = "0000-0002-7997-219X"
-ror_id = "https://ror.org/02wxw4x45"
+# first_id = 1
+# last_id = 10
+# gh_name = "oggioniale"
+# orcid = "0000-0002-7997-219X"
+# ror_id = "https://ror.org/02wxw4x45"
 
 [[vocabs.envthes.id_range]]
-first_id = 11
-last_id = 20
-gh_name = "unknown"
-orcid = ""
-ror_id = ""
+# first_id = 11
+# last_id = 20
+# gh_name = "unknown"
+# orcid = ""
+# ror_id = ""
 
 # Continue with as many [[vocabs.vocab_example.idrange]] sections as needed.
 
