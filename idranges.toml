@@ -58,7 +58,7 @@ permanent_iri_part = "https://vocabs.lter-europe.net/dataLevel/" # may be to be 
 [vocabs.dataLevel.checks]
 allow_delete = false
 [vocabs.dataLevel.prefix_map]
-et = "https://vocabs.lter-europe.net/" # ???
+elter_dl = "https://vocabs.lter-europe.net/dataLevel" # ???
 [[vocabs.dataLevel.id_range]]
 first_id = 1
 last_id = 10
