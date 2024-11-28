@@ -2,7 +2,7 @@
 # Documentation of the TOML format: https://toml.io/en/latest
 
 # Allow only a single vocabulary (default) or multiple vocabularies in the repository.
-single_vocab = false
+single_vocab = true
 
 # ==== Configuration for vocabularies ====
 
