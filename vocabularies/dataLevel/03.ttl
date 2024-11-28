@@ -1,0 +1,15 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://vocabs.lter-europe.net/dataLevel/03>
+    a skos:Concept ;
+    dcterms:identifier "03"^^xsd:token ;
+    skos:altLabel "level 2"@en ;
+    skos:definition "are defined as Cleaned data, which were subject to quality control procedures (either automatic and/or manual). These data passed the quality control procedures such as routine estimation of timing and sensor calibration and/or statistical/visual inspection to identify outliers and errors in the data. This can also include gap filling of missing data. Level 2 are therefore Cleaned Data that are the final, quality-checked and gap-filled, and published by the local nodes or the central data node (CDN)"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "cleaned data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> ;
+.
+
