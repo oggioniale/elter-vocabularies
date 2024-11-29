@@ -1,0 +1,81 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://vocabs.lter-europe.net/dataLevel/05> a skos:Collection ;
+    dcterms:identifier "05"^^xsd:token ;
+    dcterms:isPartOf <https://vocabs.lter-europe.net/dataLevel/> ;
+    rdfs:isDefinedBy <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:definition "Collection of termsabout eLTER data levels"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created collection"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:member <https://vocabs.lter-europe.net/dataLevel/01>,
+        <https://vocabs.lter-europe.net/dataLevel/02>,
+        <https://vocabs.lter-europe.net/dataLevel/03>,
+        <https://vocabs.lter-europe.net/dataLevel/04> ;
+    skos:prefLabel "Collection of data levels"@en .
+
+<https://ror.org/02wxw4x45> a schema:Organization ;
+    schema:name "https://ror.org/02wxw4x45" ;
+    schema:url "https://ror.org/02wxw4x45"^^xsd:anyURI .
+
+<https://vocabs.lter-europe.net/dataLevel/01> a skos:Concept ;
+    dcterms:identifier "01"^^xsd:token ;
+    skos:altLabel "level 0"@en ;
+    skos:definition "are defined as Raw data, which are values directly obtained by human measurements or automated sensors that have not undergone any transformation. This could include quantitative or qualitative information about physical variables of the environment and may be of various forms, such as images, text files or physical samples. These data are transformed into physical units either directly provided by instruments or converted from engineering units (for example, mV, mA, Ω) to physical units"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "raw data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> .
+
+<https://vocabs.lter-europe.net/dataLevel/02> a skos:Concept ;
+    dcterms:identifier "02"^^xsd:token ;
+    skos:altLabel "level 1"@en ;
+    skos:definition """are defined as Observation data, which are unprocessed and have not undergone any refinement or only basic data quality control
+possible sub levels in the eLTER workflows (still need to be discussed)
+L1a first level of quality control by the data provider
+L1b second level of quality control by central eLTER processes and centrally approved"""@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "observation data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> .
+
+<https://vocabs.lter-europe.net/dataLevel/03> a skos:Concept ;
+    dcterms:identifier "03"^^xsd:token ;
+    skos:altLabel "level 2"@en ;
+    skos:definition "are defined as Cleaned data, which were subject to quality control procedures (either automatic and/or manual). These data passed the quality control procedures such as routine estimation of timing and sensor calibration and/or statistical/visual inspection to identify outliers and errors in the data. This can also include gap filling of missing data. Level 2 are therefore Cleaned Data that are the final, quality-checked and gap-filled, and published by the local nodes or the central data node (CDN)"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "cleaned data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> .
+
+<https://vocabs.lter-europe.net/dataLevel/04> a skos:Concept ;
+    dcterms:identifier "04"^^xsd:token ;
+    skos:altLabel "level 3"@en ;
+    skos:definition "are defined as Data Products, which are derived from quality-controlled data. They require scientific and technical interpretation and may include multi-sensor data, analytical workflows and interpretations, model-based interpretation using also other data to generate the data products. Data products reflect a diversity of products elaborated by scientific communities that rely partly or completely on eLTER lower-level data. eLTER will provide resources to integrate and disseminate Level 3 products"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "derived data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> .
+
+<https://vocabs.lter-europe.net/dataLevel/> a skos:ConceptScheme ;
+    dcterms:created "2024-11-27"^^xsd:date ;
+    dcterms:creator <https://ror.org/02wxw4x45> ;
+    dcterms:hasPart <https://vocabs.lter-europe.net/dataLevel/05> ;
+    dcterms:identifier ""^^xsd:token ;
+    dcterms:modified "2024-11-29"^^xsd:date ;
+    dcterms:publisher <https://ror.org/02wxw4x45> ;
+    owl:versionInfo "v_48646b20" ;
+    skos:definition "overview on the data levels for eLTER data and data products. The list is still in dicussion"@en ;
+    skos:hasTopConcept <https://vocabs.lter-europe.net/dataLevel/01>,
+        <https://vocabs.lter-europe.net/dataLevel/02>,
+        <https://vocabs.lter-europe.net/dataLevel/03>,
+        <https://vocabs.lter-europe.net/dataLevel/04> ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Alessandro Oggioni"@en ;
+    skos:prefLabel "Data Level code list"@en ;
+    dcat:contactPoint "Alessandro Oggioni (orcid:0000-0002-7997-219X)" .
+
