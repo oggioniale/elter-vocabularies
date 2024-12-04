@@ -18,7 +18,8 @@ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         <https://vocabs.lter-europe.net/dataLevel/01> ,
         <https://vocabs.lter-europe.net/dataLevel/02> ,
         <https://vocabs.lter-europe.net/dataLevel/03> ,
-        <https://vocabs.lter-europe.net/dataLevel/04> ;
+        <https://vocabs.lter-europe.net/dataLevel/04> ,
+        <https://vocabs.lter-europe.net/dataLevel/06> ;
     skos:historyNote "https://orcid.org/0000-0002-7997-219X Alessandro Oggioni"@en ;
     skos:prefLabel "Data Level code list"@en ;
     dcat:contactPoint "Alessandro Oggioni (orcid:0000-0002-7997-219X)" ;

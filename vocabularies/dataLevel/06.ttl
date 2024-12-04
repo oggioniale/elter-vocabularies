@@ -1,0 +1,15 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://vocabs.lter-europe.net/dataLevel/06>
+    a skos:Concept ;
+    dcterms:identifier "06"^^xsd:token ;
+    skos:altLabel "level 4"@en ;
+    skos:definition "an example of the new concept"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "model product"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> ;
+.
+
