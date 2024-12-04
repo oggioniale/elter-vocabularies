@@ -1,0 +1,15 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://vocabs.lter-europe.net/dataLevel/04>
+    a skos:Concept ;
+    dcterms:identifier "04"^^xsd:token ;
+    skos:altLabel "level 3"@en ;
+    skos:definition "are defined as Data Products, which are derived from quality-controlled data. They require scientific and technical interpretation and may include multi-sensor data, analytical workflows and interpretations, model-based interpretation using also other data to generate the data products. Data products reflect a diversity of products elaborated by scientific communities that rely partly or completely on eLTER lower-level data. eLTER will provide resources to integrate and disseminate Level 3 products"@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "derived data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> ;
+.
+

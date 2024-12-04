@@ -1,0 +1,27 @@
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://vocabs.lter-europe.net/dataLevel/>
+    a skos:ConceptScheme ;
+    dcterms:created "2024-11-27"^^xsd:date ;
+    dcterms:creator <https://ror.org/02wxw4x45> ;
+    dcterms:hasPart <https://vocabs.lter-europe.net/dataLevel/05> ;
+    dcterms:identifier ""^^xsd:token ;
+    dcterms:modified "2024-11-27"^^xsd:date ;
+    dcterms:publisher <https://ror.org/02wxw4x45> ;
+    owl:versionInfo "automatic" ;
+    skos:definition "overview on the data levels for eLTER data and data products. The list is still in dicussion"@en ;
+    skos:hasTopConcept
+        <https://vocabs.lter-europe.net/dataLevel/01> ,
+        <https://vocabs.lter-europe.net/dataLevel/02> ,
+        <https://vocabs.lter-europe.net/dataLevel/03> ,
+        <https://vocabs.lter-europe.net/dataLevel/04> ,
+        <https://vocabs.lter-europe.net/dataLevel/06> ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Alessandro Oggioni"@en ;
+    skos:prefLabel "Data Level code list"@en ;
+    dcat:contactPoint "Alessandro Oggioni (orcid:0000-0002-7997-219X)" ;
+.
+

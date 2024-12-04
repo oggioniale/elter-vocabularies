@@ -1,0 +1,18 @@
+PREFIX dcterms: <http://purl.org/dc/terms/>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+<https://vocabs.lter-europe.net/dataLevel/02>
+    a skos:Concept ;
+    dcterms:identifier "02"^^xsd:token ;
+    skos:altLabel "level 1"@en ;
+    skos:definition """are defined as Observation data, which are unprocessed and have not undergone any refinement or only basic data quality control
+possible sub levels in the eLTER workflows (still need to be discussed)
+L1a first level of quality control by the data provider
+L1b second level of quality control by central eLTER processes and centrally approved"""@en ;
+    skos:historyNote "https://orcid.org/0000-0002-7997-219X Created concept"@en ;
+    skos:inScheme <https://vocabs.lter-europe.net/dataLevel/> ;
+    skos:prefLabel "observation data"@en ;
+    skos:topConceptOf <https://vocabs.lter-europe.net/dataLevel/> ;
+.
+
